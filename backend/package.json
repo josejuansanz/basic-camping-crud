@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-basic-crud",
+  "version": "1.0.0",
+  "description": "Basic APIRest made with ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "josejuansanz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "config": "^1.24.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.8"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.1.2"
+  }
+}

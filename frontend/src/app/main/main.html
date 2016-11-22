@@ -1,0 +1,86 @@
+<div layout="vertical" layout-fill>
+
+  <md-content>
+    <header style="text-align: center; font-size: 24px; padding: 20px 0;">
+      Camping CRUD
+    </header>
+
+    <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
+      <div>
+        <md-input-container>
+          <label>Name</label>
+          <input ng-model="newCamping.name">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Phone</label>
+          <input ng-model="newCamping.phone">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Email</label>
+          <input ng-model="newCamping.email">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Address</label>
+          <input ng-model="newCamping.address">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Latitude</label>
+          <input ng-model="newCamping.location.lat">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Longitude</label>
+          <input ng-model="newCamping.location.lon">
+        </md-input-container>
+
+        <md-button class="md-raised md-primary" data-ng-click="createCamping()">Create Camping</md-button>
+      </div>
+    </md-content>
+
+    <md-card data-ng-repeat="camping in campings" md-theme="dark-grey">
+      <md-card-title layout="row">
+        <md-card-title-text layout="row">
+          <md-input-container>
+            <label>Name</label>
+            <input ng-model="camping.name">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Phone</label>
+            <input ng-model="camping.phone">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Email</label>
+            <input ng-model="camping.email">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Address</label>
+            <input ng-model="camping.address">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Latitude</label>
+            <input ng-model="camping.location.lat">
+          </md-input-container>
+
+          <md-input-container>
+            <label>Longitude</label>
+            <input ng-model="camping.location.lon">
+          </md-input-container>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button data-ng-click="updateCamping(camping)">Update</md-button>
+        <md-button data-ng-click="deleteCamping(camping)">Delete</md-button>
+      </md-card-actions>
+    </md-card>
+
+  </md-content>
+
+</div>

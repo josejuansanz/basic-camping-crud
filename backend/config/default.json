@@ -1,0 +1,3 @@
+{
+  "DBHost": "mongodb://localhost/camping_app"
+}
